@@ -13,16 +13,16 @@ import { ReactComponent as Plus } from '../Assets/add.svg';
 
 function TicketColumn({ title, tickets, grouping, count, priority }) {
   const renderPriorityIcon = () => {
-    switch (priority) {
-      case 0:
+    switch (title) {
+      case 'No priority':
         return <Priority0 className="priority-icon" />;
-      case 1:
+      case 'Low':
         return <Priority1 className="priority-icon" />;
-      case 2:
+      case 'Medium':
         return <Priority2 className="priority-icon" />;
-      case 3:
+      case 'High':
         return <Priority3 className="priority-icon" />;
-      case 4:
+      case 'Urgent':
         return <Priority4 className="priority-icon" />;
       default:
         return null;
