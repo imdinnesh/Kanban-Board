@@ -1,0 +1,59 @@
+.ticket {
+    background-color: white;
+    border: 1px solid #e1e4e8;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 10px;
+    max-height: 150px; /* Adjust the value as needed */
+    overflow: hidden;
+    width: 300px; /* Adjust the value as needed */
+}
+
+.ticket-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.ticket-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    max-width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit to 2 lines */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+.ticket-footer {
+    display: flex;
+    gap: 5px;
+}
+
+.ticket-priority,
+.ticket-tag {
+    font-size: 0.8em;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.priority-0 {
+    background-color: #ccc;
+}
+
+.priority-1 {
+    background-color: #79f2c0;
+}
+
+.priority-2 {
+    background-color: #fdf4ba;
+}
+
+.priority-3 {
+    background-color: #ffd5d2;
+}
+
+.priority-4 {
+    background-color: #ffafa3;
+}

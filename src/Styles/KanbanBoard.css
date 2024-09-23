@@ -1,0 +1,12 @@
+.kanban-board {
+    padding: 20px;
+    background-color: #f4f5f7;
+    min-height: 100vh;
+    overflow-x: auto;
+}
+
+.board-columns {
+    display: flex;
+    gap: 20px;
+    min-width: max-content;
+}

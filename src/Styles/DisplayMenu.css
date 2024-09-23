@@ -1,0 +1,46 @@
+.display-menu {
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1000;
+}
+
+.menu-dropdown {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.display-menu button {
+    padding: 8px 16px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.display-menu button:hover {
+    background-color: #f0f0f0;
+}
+
+.menu-dropdown div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.menu-dropdown label {
+    margin-right: 10px;
+    /* Ensure spacing between label and select */
+    font-weight: bold;
+}
+
+.menu-dropdown select {
+    width: auto;
+    /* Makes select box take only necessary space */
+    padding: 5px;
+    flex-grow: 1;
+    /* Ensures select expands when necessary */
+}

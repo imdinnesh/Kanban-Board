@@ -1,0 +1,61 @@
+.ticket-column {
+    min-width: 300px;
+    background-color: #f4f5f7;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.ticket-column h2 {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.ticket-count {
+    font-size: 0.8em;
+    color: #6b778c;
+    margin-left: 5px;
+}
+
+.spaced-count {
+    margin-left: 8px;
+}
+
+.ticket-column .header {
+    display: flex;
+    align-items: center;
+}
+
+.priority-icon {
+    margin-right: 8px;
+    /* Adjust the value as needed */
+    width: 16px;
+    /* Adjust the value as needed */
+    height: 16px;
+    /* Adjust the value as needed */
+}
+
+.ticket-column h2 {
+    margin: 0;
+}
+
+.ticket-count {
+    margin-left: 16px;
+    /* Adjust the value as needed */
+    margin-right: auto;
+    /* Pushes the count to the left of the icons */
+}
+
+.icons {
+    display: flex;
+    gap: 8px;
+    /* Adjust the value as needed */
+}
+
+.icon {
+    fill: currentColor;
+    width: 16px;
+    /* Adjust the value as needed */
+    height: 16px;
+    /* Adjust the value as needed */
+}
