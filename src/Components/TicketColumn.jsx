@@ -8,11 +8,21 @@ import { ReactComponent as Priority1 } from '../Assets/ImgLowPriority.svg';
 import { ReactComponent as Priority2 } from '../Assets/ImgMediumPriority.svg';
 import { ReactComponent as Priority3 } from '../Assets/ImgHighPriority.svg';
 import { ReactComponent as Priority4 } from '../Assets/SVGUrgentPrioritycolour.svg';
+
+// SVGs for status
+import { ReactComponent as Status0 } from '../Assets/Backlog.svg';
+import { ReactComponent as Status1 } from '../Assets/Cancelled.svg';
+import { ReactComponent as Status2 } from '../Assets/Done.svg';
+import { ReactComponent as Status3 } from '../Assets/in-progress.svg';
+import { ReactComponent as Status4 } from '../Assets/Todo.svg';
+
+// SVGs for icons
 import { ReactComponent as Dot } from '../Assets/dotmenu.svg';
 import { ReactComponent as Plus } from '../Assets/add.svg';
 
-function TicketColumn({ title, tickets, grouping, count, priority }) {
+function TicketColumn({ title, tickets, grouping, count }) {
   const renderPriorityIcon = () => {
+    console.log(title);
     switch (title) {
       case 'No priority':
         return <Priority0 className="priority-icon" />;
@@ -24,6 +34,16 @@ function TicketColumn({ title, tickets, grouping, count, priority }) {
         return <Priority3 className="priority-icon" />;
       case 'Urgent':
         return <Priority4 className="priority-icon" />;
+      case 'Backlog':
+        return <Status0 className="priority-icon" />;
+      case 'Cancelled':
+        return <Status1 className="priority-icon" />;
+      case 'Done':
+        return <Status2 className="priority-icon" />;
+      case 'In progress':
+        return <Status3 className="priority-icon" />;
+      case 'Todo':
+        return <Status4 className="priority-icon" />;
       default:
         return null;
     }
