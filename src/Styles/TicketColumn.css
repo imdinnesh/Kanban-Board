@@ -59,3 +59,52 @@
     height: 16px;
     /* Adjust the value as needed */
 }
+
+.ticket {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.ticket-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.ticket-id {
+    font-weight: bold;
+}
+
+.ticket-user {
+    color: #888;
+}
+
+.ticket-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.ticket-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+    /* Ensure icons and tags are aligned */
+}
+
+.priority-icon {
+    margin-right: 8px;
+    /* Adjust the value as needed */
+    width: 16px;
+    /* Adjust the value as needed */
+    height: 16px;
+    /* Adjust the value as needed */
+}
+
+.ticket-tag {
+    background-color: #eee;
+    border-radius: 3px;
+    padding: 2px 5px;
+}

@@ -4,9 +4,11 @@
     border-radius: 3px;
     padding: 10px;
     margin-bottom: 10px;
-    max-height: 150px; /* Adjust the value as needed */
+    max-height: 150px;
+    /* Adjust the value as needed */
     overflow: hidden;
-    width: 300px; /* Adjust the value as needed */
+    width: 300px;
+    /* Adjust the value as needed */
 }
 
 .ticket-header {
@@ -21,7 +23,8 @@
     max-width: 100%;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* Limit to 2 lines */
+    -webkit-line-clamp: 2;
+    /* Limit to 2 lines */
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
 }
@@ -38,22 +41,54 @@
     border-radius: 3px;
 }
 
-.priority-0 {
-    background-color: #ccc;
+.ticket {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
 
-.priority-1 {
-    background-color: #79f2c0;
+.ticket-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
-.priority-2 {
-    background-color: #fdf4ba;
+.ticket-id {
+    font-weight: bold;
 }
 
-.priority-3 {
-    background-color: #ffd5d2;
+.ticket-user {
+    color: #888;
 }
 
-.priority-4 {
-    background-color: #ffafa3;
+.ticket-title {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.ticket-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+    /* Ensure icons and tags are aligned */
+}
+
+.priority-icon,
+.status-icon {
+    margin-right: 8px;
+    /* Adjust the value as needed */
+    width: 16px;
+    /* Adjust the value as needed */
+    height: 16px;
+    /* Adjust the value as needed */
+}
+
+.ticket-tag {
+    background-color: #eee;
+    border-radius: 3px;
+    padding: 2px 5px;
 }
