@@ -12,7 +12,6 @@
     padding: 15px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     width: 300px;
-    /* Increased width */
 }
 
 .display-menu button {
@@ -27,7 +26,6 @@
 
 .display-menu button .display-icon {
     margin-right: 12px;
-    /* Adjust spacing as needed */
 }
 
 .display-menu button .button-text {
@@ -37,7 +35,6 @@
 
 .display-menu button .arrow-icon {
     margin-left: 12px;
-    /* Adjust spacing as needed */
 }
 
 .display-menu button:hover {
@@ -48,12 +45,10 @@
     display: flex;
     align-items: center;
     margin-bottom: 15px;
-    /* Reduced spacing between options */
 }
 
 .menu-dropdown .dropdown-option label {
     margin-right: 20px;
-    /* Uniform spacing between label and select */
     font-weight: bold;
 }
 
@@ -62,32 +57,27 @@
     align-items: center;
     position: relative;
     width: 40%;
-    /* Reduced width */
 }
 .menu-dropdown .dropdown-option label {
     margin-right: 100px;
-    /* Uniform spacing between label and select */
     font-weight: bold;
     color: grey;
-    /* Set label color to grey */
 }
 
 .menu-dropdown select {
     width: 100%;
-    /* Make select take full width of the wrapper */
+    
     padding: 8px;
-    /* Adjust padding for better spacing */
     appearance: none;
-    /* Remove default arrow */
     border: 1px solid #ccc;
     border-radius: 4px;
     padding-right: 30px;
-    /* Add padding to the right to make space for the arrow icon */
+    
 }
 
 .menu-dropdown .select-wrapper .arrow-icon {
     position: absolute;
     right: 10px;
     pointer-events: none;
-    /* Make sure the icon doesn't block the select interaction */
+    
 }

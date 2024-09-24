@@ -49,18 +49,31 @@ function KanbanBoard() {
     const groupedTickets = groupTickets(tickets, grouping, users);
     const sortedGroupedTickets = sortTickets(groupedTickets, sorting);
 
+    const allStatusLabels = ['Todo', 'In progress', 'Done','Backlog','Cancelled']; // Add all possible status labels here
+
     const columnsToRender = grouping === 'priority' ? getPriorityColumns(sortedGroupedTickets) : sortedGroupedTickets;
+
+    // Ensure all status labels are included when grouping by status
+    if (grouping === 'status') {
+        allStatusLabels.forEach(status => {
+            if (!columnsToRender[status]) {
+                columnsToRender[status] = []; // Add empty array for statuses with no tasks
+            }
+        });
+    }
 
     return (
         <div className="kanban-board">
-            <DisplayMenu
-                grouping={grouping}
-                sorting={sorting}
-                onGroupingChange={setGrouping}
-                onSortingChange={setSorting}
-                isOpen={isMenuOpen}
-                setIsOpen={setIsMenuOpen}
-            />
+            <div className="display-menu-bar">
+                <DisplayMenu
+                    grouping={grouping}
+                    sorting={sorting}
+                    onGroupingChange={setGrouping}
+                    onSortingChange={setSorting}
+                    isOpen={isMenuOpen}
+                    setIsOpen={setIsMenuOpen}
+                />
+            </div>
             <div className="board-columns">
                 {Object.entries(columnsToRender).map(([columnName, columnTickets]) => (
                     <TicketColumn

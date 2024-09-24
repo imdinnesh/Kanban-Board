@@ -6,10 +6,8 @@
     margin-bottom: 10px;
     max-height: 150px;
     margin-top: 20px;
-    /* Adjust the value as needed */
     overflow: hidden;
     width: 300px;
-    /* Adjust the value as needed */
 }
 
 .ticket-header {
@@ -25,7 +23,6 @@
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
-    /* Limit to 2 lines */
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
 }
@@ -61,6 +58,8 @@
 
 .ticket-user {
     color: #888;
+    width: 15px;
+    height: 15px;
 }
 
 .ticket-title {
@@ -69,35 +68,34 @@
     font-size: 16px;
     margin-bottom: 10px;
 }
+.user-icon{
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
 
 .ticket-footer {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
     align-items: center;
-    /* Ensure icons and tags are aligned */
 }
 
 .status-icon {
     margin-right: 8px;
-    /* Adjust the value as needed */
     width: 16px;
-    /* Adjust the value as needed */
     height: 16px;
-    /* Adjust the value as needed */
+    
 }
 
 .priority-icon-label{
     margin-right: 8px;
-    /* Adjust the value as needed */
     width: 16px;
-    /* Adjust the value as needed */
     height: 16px;
-    /* Adjust the value as needed */
     border-radius: 3px;
     padding: 2px 5px;
     border: 0.25px solid grey;
-    /* Very small border width */
 }
 
 .ticket-tag {

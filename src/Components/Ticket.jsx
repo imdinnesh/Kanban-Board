@@ -15,6 +15,9 @@ import { ReactComponent as Status2 } from '../Assets/Done.svg';
 import { ReactComponent as Status3 } from '../Assets/in-progress.svg';
 import { ReactComponent as Status4 } from '../Assets/Todo.svg';
 
+//SVG for user
+import { ReactComponent as User } from '../Assets/avatar.svg';
+
 function Ticket({ ticket, grouping }) {
     const maxTitleLength = 50; // Adjust the value as needed
 
@@ -60,7 +63,7 @@ function Ticket({ ticket, grouping }) {
         <div className="ticket">
             <div className="ticket-header">
                 <span className="ticket-id">{ticket.id}</span>
-                {grouping !== 'user' && <span className="ticket-user">{ticket.userId}</span>}
+                {grouping !== 'user' && <span className='ticket-user'><User className='user-icon'/></span>}
             </div>
             <div className="ticket-title">
                 {renderStatusIcon()}

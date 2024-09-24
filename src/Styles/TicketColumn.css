@@ -28,11 +28,8 @@
 
 .priority-icon {
     margin-right: 8px;
-    /* Adjust the value as needed */
     width: 16px;
-    /* Adjust the value as needed */
     height: 16px;
-    /* Adjust the value as needed */
 }
 
 .ticket-column h2 {
@@ -41,23 +38,22 @@
 
 .ticket-count {
     margin-left: 16px;
-    /* Adjust the value as needed */
     margin-right: auto;
-    /* Pushes the count to the left of the icons */
+    
 }
 
 .icons {
     display: flex;
     gap: 8px;
-    /* Adjust the value as needed */
+    
 }
 
 .icon {
     fill: currentColor;
     width: 16px;
-    /* Adjust the value as needed */
+    
     height: 16px;
-    /* Adjust the value as needed */
+    
 }
 
 .ticket {
@@ -91,16 +87,12 @@
     flex-wrap: wrap;
     gap: 5px;
     align-items: center;
-    /* Ensure icons and tags are aligned */
 }
 
 .priority-icon {
     margin-right: 8px;
-    /* Adjust the value as needed */
     width: 16px;
-    /* Adjust the value as needed */
     height: 16px;
-    /* Adjust the value as needed */
 }
 
 .ticket-tag {
