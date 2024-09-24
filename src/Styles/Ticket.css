@@ -5,6 +5,7 @@
     padding: 10px;
     margin-bottom: 10px;
     max-height: 150px;
+    margin-top: 20px;
     /* Adjust the value as needed */
     overflow: hidden;
     width: 300px;
@@ -77,7 +78,6 @@
     /* Ensure icons and tags are aligned */
 }
 
-.priority-icon,
 .status-icon {
     margin-right: 8px;
     /* Adjust the value as needed */
@@ -85,6 +85,19 @@
     /* Adjust the value as needed */
     height: 16px;
     /* Adjust the value as needed */
+}
+
+.priority-icon-label{
+    margin-right: 8px;
+    /* Adjust the value as needed */
+    width: 16px;
+    /* Adjust the value as needed */
+    height: 16px;
+    /* Adjust the value as needed */
+    border-radius: 3px;
+    padding: 2px 5px;
+    border: 0.25px solid grey;
+    /* Very small border width */
 }
 
 .ticket-tag {

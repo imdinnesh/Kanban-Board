@@ -25,15 +25,15 @@ function Ticket({ ticket, grouping }) {
     const renderPriorityIcon = () => {
         switch (ticket.priority) {
             case 0:
-                return <Priority0 className="priority-icon" />;
+                return <Priority0 className="priority-icon-label" />;
             case 1:
-                return <Priority1 className="priority-icon" />;
+                return <Priority1 className="priority-icon-label" />;
             case 2:
-                return <Priority2 className="priority-icon" />;
+                return <Priority2 className="priority-icon-label" />;
             case 3:
-                return <Priority3 className="priority-icon" />;
+                return <Priority3 className="priority-icon-label" />;
             case 4:
-                return <Priority4 className="priority-icon" />;
+                return <Priority4 className="priority-icon-label" />;
             default:
                 return null;
         }
@@ -42,15 +42,15 @@ function Ticket({ ticket, grouping }) {
     const renderStatusIcon = () => {
         switch (ticket.status) {
             case 'Backlog':
-                return <Status0 className="priority-icon" />;
+                return <Status0 className="status-icon" />;
             case 'Cancelled':
-                return <Status1 className="priority-icon" />;
+                return <Status1 className="status-icon" />;
             case 'Done':
-                return <Status2 className="priority-icon" />;
+                return <Status2 className="status-icon" />;
             case 'In progress':
-                return <Status3 className="priority-icon" />;
+                return <Status3 className="status-icon" />;
             case 'Todo':
-                return <Status4 className="priority-icon" />;
+                return <Status4 className="status-icon" />;
             default:
                 return null;
         }

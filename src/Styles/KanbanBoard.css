@@ -9,4 +9,5 @@
     display: flex;
     gap: 20px;
     min-width: max-content;
+    background-color: #f4f5f7;
 }
